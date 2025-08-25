@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page with JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Interactive Web Page Demo</h1>
+  </header>
+
+  <!-- Part 1: Event Handling -->
+  <section id="events">
+    <h2>Event Handling Examples</h2>
+    <button id="clickMeBtn">Click me!</button>
+    <p id="clickMessage"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section id="interactive">
+    <h2>Interactive Features</h2>
+    <!-- Light/Dark Mode Toggle -->
+    <button id="modeToggleBtn">Switch to Dark Mode</button>
+
+    <!-- Counter -->
+    <div class="counter">
+      <button id="decreaseBtn">-</button>
+      <span id="countDisplay">0</span>
+      <button id="increaseBtn">+</button>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div class="faq">
+      <button class="faq-question">What is JavaScript?</button>
+      <p class="faq-answer">JavaScript is a programming language used to make web pages interactive.</p>
+      <button class="faq-question">What is the DOM?</button>
+      <p class="faq-answer">The DOM is a representation of the page structure that JavaScript can manipulate.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section id="formValidation">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" />
+      <span class="error-message" id="nameError"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="email@example.com" />
+      <span class="error-message" id="emailError"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <span class="error-message" id="passwordError"></span>
+
+      <button type="submit">Register</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
