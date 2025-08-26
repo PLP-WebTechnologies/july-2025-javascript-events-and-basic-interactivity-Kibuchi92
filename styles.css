@@ -1,224 +1,69 @@
-/* Gradient blue-green background and text */
+/* General styles */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0d9a85, #2ebf91);
-  color: white;
-  padding: 1rem;
   max-width: 700px;
-  margin: auto;
-  border-radius: 8px;
-}
-
-/* Section Styling */
-section {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-}
-
-/* Buttons */
-button {
-  background-color: #0d9a85;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 4px;
-  color: white;
-  font-weight: bold;
-  margin: 0.3rem 0.5rem 0.3rem 0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-button:hover {
-  background-color: #147d68;
-}
-
-/* Counter display */
-.counter {
-  display: flex;
-  align-items: center;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-#countDisplay {
-  margin: 0 1rem;
-  min-width: 40px;
-  text-align: center;
-  background: #14a37f;
-  padding: 0.3rem 0;
-  border-radius: 4px;
-}
-
-/* FAQ */
-.faq-question {
-  width: 100%;
-  text-align: left;
-  padding: 0.5rem;
-  background: #14a37f;
-  margin-top: 0.5rem;
-}
-.faq-answer {
-  padding: 0.5rem 1rem;
-  background: #0b6e5c;
-  display: none;
-  border-radius: 0 0 6px 6px;
-}
-
-/* Form Styling */
-form {
-  display: flex;
-  flex-direction: column;
-}
-label {
-  margin-top: 1rem;
-  font-weight: bold;
-}
-input {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: none;
-  margin-top: 0.3rem;
-}
-.error-message {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  height: 1.2rem;
-}
-#formMessage {
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-/* Dark mode styles */
-.dark-mode {
-  background: linear-gradient(135deg, #031b18, #00342e);
-  color: #a7e0d7;
-}
-.dark-mode button {
-  background-color: #025047;
-}
-.dark-mode button:hover {
-  background-color: #01332b;
-}
-.dark-mode .faq-question {
-  background: #036956;
-}
-.dark-mode .faq-answer {
-  background: #014d38;
-}
-.dark-mode input {
-  background: #024336;
-  color: #a7e0d7;
-}
-/* Gradient blue-green background and text */
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0d9a85, #2ebf91);
-  color: white;
+  margin: 2rem auto;
   padding: 1rem;
-  max-width: 700px;
-  margin: auto;
-  border-radius: 8px;
+  background: #eef6f6;
+  color: #333;
 }
 
-/* Section Styling */
-section {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-}
-
-/* Buttons */
-button {
-  background-color: #0d9a85;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 4px;
-  color: white;
-  font-weight: bold;
-  margin: 0.3rem 0.5rem 0.3rem 0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-button:hover {
-  background-color: #147d68;
-}
-
-/* Counter display */
-.counter {
-  display: flex;
-  align-items: center;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-#countDisplay {
-  margin: 0 1rem;
-  min-width: 40px;
+h1, h2 {
   text-align: center;
-  background: #14a37f;
-  padding: 0.3rem 0;
-  border-radius: 4px;
 }
 
-/* FAQ */
-.faq-question {
-  width: 100%;
-  text-align: left;
-  padding: 0.5rem;
-  background: #14a37f;
-  margin-top: 0.5rem;
-}
-.faq-answer {
-  padding: 0.5rem 1rem;
-  background: #0b6e5c;
-  display: none;
-  border-radius: 0 0 6px 6px;
-}
+/* Part 1: CSS Hover and Keyframe Animations */
 
-/* Form Styling */
-form {
-  display: flex;
-  flex-direction: column;
-}
-label {
-  margin-top: 1rem;
-  font-weight: bold;
-}
-input {
-  padding: 0.5rem;
-  border-radius: 4px;
+/* Button with smooth color & scale transition */
+.btn-hover {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
   border: none;
-  margin-top: 0.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.error-message {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  height: 1.2rem;
-}
-#formMessage {
-  margin-top: 1rem;
-  font-weight: bold;
+.btn-hover:hover {
+  background-color: #388e3c;
+  transform: scale(1.1);
 }
 
-/* Dark mode styles */
-.dark-mode {
-  background: linear-gradient(135deg, #031b18, #00342e);
-  color: #a7e0d7;
+/* Box with continuous animation using keyframes */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #2196f3;
+  margin: 2rem auto;
+  border-radius: 8px;
+  animation: pulse 3s infinite ease-in-out;
 }
-.dark-mode button {
-  background-color: #025047;
+
+/* Keyframes for pulse effect */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    background-color: #2196f3;
+  }
+  50% {
+    transform: scale(1.3);
+    background-color: #64b5f6;
+  }
 }
-.dark-mode button:hover {
-  background-color: #01332b;
+
+/* Part 3: JS triggered animation - box setup */
+.anim-box {
+  width: 100px;
+  height: 100px;
+  background-color: #9c27b0;
+  margin: 1rem auto;
+  border-radius: 8px;
+  transition: transform 0.6s ease;
 }
-.dark-mode .faq-question {
-  background: #036956;
-}
-.dark-mode .faq-answer {
-  background: #014d38;
-}
-.dark-mode input {
-  background: #024336;
-  color: #a7e0d7;
+
+/* Animated state class */
+.animate {
+  transform: rotateY(180deg) scale(1.2);
+  background-color: #ce93d8;
 }
